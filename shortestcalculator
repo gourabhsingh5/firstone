@@ -1,0 +1,11 @@
+class Calculator(object):
+    def __init__(this,a,b):
+        this.a= a
+        this.b= b
+    def operation(this, op):
+        return eval('this.a {0} this.b'.format(op))   
+a= int(input())
+b= int(input())
+op= input()
+calc= Calculator(a,b)
+print(calc.operation(op))
